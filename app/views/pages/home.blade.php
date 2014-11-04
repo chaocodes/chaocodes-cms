@@ -4,7 +4,9 @@
 <div id="about">
 	<div id="abouttext">
 		<h3>About Me</h3>
-		<p>About Me</p>
+		<p>Welcome to ChaoCodes.com! My name is Chao Lai and this is my portfolio. I'm currently a Computer Science major at the University of Connecticut at Storrs, CT. 
+		I believe that I am a highly motivated and quick-learning computer programmer that also enjoys playing video games and watching movies. 
+		More information about why I believe you should hire me can be located on the various pages of this website. Thanks for visiting!</p>
 	</div>
 	<div id="aboutimage">
 		{{HTML::image('images/aboutmebanner.jpg', 'banner')}}
