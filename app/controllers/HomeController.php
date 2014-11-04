@@ -4,6 +4,13 @@ class HomeController extends Controller
 {
 	public function index()
 	{
-		return View::make('pages.home');
+		$skills = Skill::all();
+		$tools = Tool::all();
+
+		return View::make('pages.home')->with
+		([
+			"skills" => $skills,
+			"tools" => $tools,
+		]);
 	}
 }

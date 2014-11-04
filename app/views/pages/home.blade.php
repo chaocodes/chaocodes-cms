@@ -14,14 +14,18 @@
 </div>
 <div id="skills">
 	<h3>Programming</h3>
-	<div class="outbar"><div class="innerbar" style="width: 85%">
-		JAVA
+	@foreach ($skills as $skill)
+	<div class="outerbar"><div class="innerbar" style="width: {{$skill->experience}}%">
+		{{$skill->skill}}
 	</div></div>
+	@endforeach
 </div>
 <div id="software">
 	<h3>Software</h3>
+	@foreach ($tools as $tool)
 	<div class="softwareimage">
-		<a href="{{URL::to('/')}}">{{HTML::image('images/software/photoshop.jpg', 'photoshop')}}</a>
+		<a href="{{$tool->url}}"><img src="{{$tool->image}}" alt="{{$tool->name}}"/></a>
 	</div>
+	@endforeach
 </div>
 @stop
