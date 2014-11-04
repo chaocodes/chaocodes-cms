@@ -94,7 +94,7 @@ class ContentSeeder extends Seeder
 			$tool = new Tool;
 			$tool->name = $name;
 			$imgPath = str_replace(' ', '', strtolower($name));
-			$tool->image = "images/software/" . $imgPath;
+			$tool->image = "images/software/" . $imgPath . ".jpg";
 			$tool->url = $url;
 			$tool->save();
 		}
