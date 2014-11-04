@@ -1,0 +1,213 @@
+html
+{
+	font-family: Georgia, serif;
+}
+
+body
+{
+	background-image: url("../images/bg.jpg");
+}
+
+h3
+{
+	margin-top: 0px;
+	font-size: 20px;
+}
+
+h2
+{
+	margin-top: -30px;
+	font-size: 20px;
+}
+
+h1
+{
+	font-size: 40px;
+}
+
+p
+{
+	margin-top: -20px;
+	font-size: 14px;
+	color: #333;
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+#container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 880px;
+}
+
+#header
+{
+	text-align: center;
+}
+
+#navbar
+{
+	background-image: url("../images/navbar.jpg");
+	background-repeat: repeat-x;
+	height: 59px;
+	width: 880px;
+	text-align: center;
+}
+
+#navbar ul
+{
+	margin: 0;
+	padding: 0;
+	padding-top: 17px;
+	list-style-type:none;
+} 
+
+#navbar li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+	font-size: 20px;
+}
+
+#about
+{
+	margin-top: 20px;
+	width: 880px;
+	clear: both;
+}
+
+#abouttext
+{
+	float: left;
+	width: 280px;
+}
+
+#classtext
+{
+	float: left;
+	width: 870px;
+}
+
+#classtext p
+{
+	font-size: 16px;
+}
+
+#aboutimage
+{
+	float: right;
+	width: 580px;
+}
+
+#skills
+{
+	clear:both;
+}
+
+#software
+{
+	margin-top: 20px;
+	clear: both;
+}
+
+.outerbar
+{
+	padding: 1px;
+	margin-top: 20px;
+	width: 875px;
+	background-color: #eee;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+}
+
+.innerbar
+{
+	padding-right: 15px;
+	background-color: #bbb;
+	text-align: right;
+	font-size: 16px;
+}
+
+.softwareimage
+{
+	float: left;
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+}
+
+#software a:hover
+{
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #999;
+}
+
+.softwaretext
+{
+	float: left;
+	margin-left: 5px;
+	height: 50px;
+	font-size: 24px;
+	line-height: 60px;
+}
+
+.bar
+{
+	margin-top: 20px;
+	clear: both;
+	width: 880px;
+	height: 5px;
+	background-color: #333;
+}
+
+#footer
+{
+	clear: both;
+	padding-top: 15px;
+	font-size: 12px;
+}
+
+#lefttext
+{
+	text-align: left;
+	float: left;
+	width: 320px;
+}
+
+#centertext
+{
+	text-align: center;
+	color: #aaa;
+	float: left;
+	width: 250px;
+}
+
+#righttext
+{
+	text-align: right;
+	float: right;
+	width: 200px;
+}
