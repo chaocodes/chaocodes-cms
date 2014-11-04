@@ -1,3 +1,3 @@
 ChaoCodes.Com CMS
 =================
-Not included: Vendor folder, must add your own
+Use 'composer install' to install required dependencies
