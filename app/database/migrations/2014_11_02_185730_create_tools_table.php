@@ -13,6 +13,7 @@ class CreateToolsTable extends Migration
 			$table->string('name', 40);
 			$table->string('image', 40);
 			$table->string('url', 40);
+			$table->timestamps();
 		});
 	}
 

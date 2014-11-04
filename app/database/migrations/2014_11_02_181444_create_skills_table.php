@@ -12,6 +12,7 @@ class CreateSkillsTable extends Migration
 			$table->increments('id');
 			$table->string('skill', 30);
 			$table->integer('experience');
+			$table->timestamps();
 		});
 	}
 

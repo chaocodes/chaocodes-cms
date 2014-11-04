@@ -13,6 +13,7 @@ class CreateCoursesTable extends Migration
 			$table->string('name', 30);
 			$table->string('description', 30);
 			$table->enum('category', array('cs', 'math'));
+			$table->timestamps();
 		});
 	}
 
