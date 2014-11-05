@@ -14,6 +14,6 @@
 			{{HTML::link('/', 'RESUME')}}
 		</li>
 		<li>
-			{{HTML::link('/', 'COURSES')}}
+			{{HTML::link('courses', 'COURSES')}}
 		</li>
 </div>
