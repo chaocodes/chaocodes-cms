@@ -11,7 +11,7 @@ class CreateCoursesTable extends Migration
 		{
 			$table->increments('id');
 			$table->string('name', 30);
-			$table->string('description', 30);
+			$table->string('description', 60);
 			$table->enum('category', array('cs', 'math'));
 			$table->timestamps();
 		});
