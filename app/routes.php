@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'PageController@home');
 
-Route::get('courses', 'CourseController@index');
+Route::get('courses', 'PageController@courses');

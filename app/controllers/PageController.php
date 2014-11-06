@@ -1,8 +1,20 @@
 <?php
 
-class CourseController extends Controller
+class PageController extends Controller
 {
-	public function index()
+	public function home()
+	{
+		$skills = Skill::all();
+		$tools = Tool::all();
+
+		return View::make('pages.home')->with
+		([
+			"skills" => $skills,
+			"tools" => $tools,
+		]);
+	}
+
+	public function courses()
 	{
 		$courseCS = Course::where('category' , '=', 'cs')->get();
 		$courseMath = Course::where('category' , '=', 'math')->get();
