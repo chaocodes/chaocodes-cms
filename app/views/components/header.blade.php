@@ -11,7 +11,7 @@
 			{{HTML::link('projects', 'PROJECTS')}}
 		</li>
 		<li>
-			{{HTML::link('/', 'RESUME')}}
+			{{HTML::link('resume', 'RESUME')}}
 		</li>
 		<li>
 			{{HTML::link('courses', 'COURSES')}}

@@ -15,4 +15,6 @@ Route::get('/', 'PageController@home');
 
 Route::get('/projects', 'PageController@projects');
 
+Route::get('resume', 'PageController@resume');
+
 Route::get('courses', 'PageController@courses');
