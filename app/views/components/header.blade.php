@@ -8,7 +8,7 @@
 			{{HTML::link('/', 'HOME')}}
 		</li>
 		<li>
-			{{HTML::link('/', 'PROJECTS')}}
+			{{HTML::link('projects', 'PROJECTS')}}
 		</li>
 		<li>
 			{{HTML::link('/', 'RESUME')}}

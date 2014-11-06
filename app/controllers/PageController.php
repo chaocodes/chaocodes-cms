@@ -14,6 +14,16 @@ class PageController extends Controller
 		]);
 	}
 
+	public function projects()
+	{
+		$projects = Project::all();
+
+		return View::make('pages.projects')->with
+		([
+			"projects" => $projects,
+		]);
+	}
+
 	public function courses()
 	{
 		$courseCS = Course::where('category' , '=', 'cs')->get();
