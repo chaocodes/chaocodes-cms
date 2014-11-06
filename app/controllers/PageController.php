@@ -24,6 +24,11 @@ class PageController extends Controller
 		]);
 	}
 
+	public function resume()
+	{
+		return View::make('pages.resume');
+	}
+
 	public function courses()
 	{
 		$courseCS = Course::where('category' , '=', 'cs')->get();
