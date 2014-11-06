@@ -20,7 +20,7 @@ Route::get('resume', 'PageController@resume');
 Route::get('courses', 'PageController@courses');
 
 Route::get('login', 'PageController@login');
-Route::post('login', 'PageController@processLogin');
+Route::post('login', array('before' => 'csrf', 'uses' => 'PageController@processLogin'));
 
 Route::post('logout', 'PageController@logout');
 
