@@ -18,3 +18,13 @@ Route::get('projects', 'PageController@projects');
 Route::get('resume', 'PageController@resume');
 
 Route::get('courses', 'PageController@courses');
+
+Route::get('login', 'PageController@login');
+Route::post('login', 'PageController@processLogin');
+
+Route::post('logout', 'PageController@logout');
+
+Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
+{
+	Route::get('/', 'AdminController@index');
+});

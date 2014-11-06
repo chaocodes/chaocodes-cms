@@ -40,4 +40,49 @@ class PageController extends Controller
 			"courseMath" => $courseMath,
 		]);
 	}
+
+	public function login()
+	{
+		if (Auth::check()) // Already logged in...
+		{
+			return Redirect::to('admin');
+		}
+		return View::make('pages.login');
+	}
+
+	public function processLogin()
+	{
+		$rules = array
+		(
+			'username' => 'required',
+			'password' => 'required',
+		);
+
+		$validator = Validator::make(Input::all(), $rules);
+
+		if ($validator->fails())
+		{
+			return Redirect::to('login')->withErrors($validator);
+		}
+		else
+		{
+			$user = array
+			(
+				'username' => Input::get('username'),
+				'password' => Input::get('password'),
+			);
+
+			if (Auth::attempt($user))
+			{
+				return Redirect::to('admin');
+			}
+		}
+		return Redirect::to('login');
+	}
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::to('login');
+	}
 }
