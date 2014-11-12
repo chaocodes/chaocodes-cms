@@ -52,11 +52,11 @@ class PageController extends Controller
 
 	public function processLogin()
 	{
-		$rules = array
-		(
+		$rules =
+		[
 			'username' => 'required',
 			'password' => 'required',
-		);
+		];
 
 		$validator = Validator::make(Input::all(), $rules);
 
@@ -66,11 +66,11 @@ class PageController extends Controller
 		}
 		else
 		{
-			$user = array
-			(
+			$user =
+			[
 				'username' => Input::get('username'),
 				'password' => Input::get('password'),
-			);
+			];
 
 			if (Auth::attempt($user))
 			{
