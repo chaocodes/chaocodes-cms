@@ -27,4 +27,6 @@ Route::post('logout', 'PageController@logout');
 Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 {
 	Route::get('/', 'AdminController@index');
+
+	Route::resource('skill', 'SkillController');
 });

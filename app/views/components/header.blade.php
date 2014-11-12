@@ -23,10 +23,10 @@
 		{{HTML::link('admin', 'ADMIN')}}
 	</li>
 	<li>
-		{{HTML::link('admin', 'SKILLS')}}
+		{{HTML::link('admin/skill', 'SKILLS')}}
 	</li>
 	<li>
-		{{HTML::link('admin', 'SOFTWARE')}}
+		{{HTML::link('admin', 'TOOLS')}}
 	</li>
 	<li>
 		{{HTML::link('admin', 'PROJECTS')}}
