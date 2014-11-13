@@ -30,4 +30,5 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 
 	Route::resource('skill', 'SkillController');
 	Route::resource('tool', 'ToolController');
+	Route::resource('project', 'ProjectController');
 });

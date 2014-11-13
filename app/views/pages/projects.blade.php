@@ -14,7 +14,7 @@
 	<div id="aboutimage">
 		<img src="{{$project->image}}" alt="banner" />
 	</div>
+	<div id="skills"></div> {{-- Placeholder seperator --}}
 	@endforeach
-	<br>
 </div>
 @stop
