@@ -29,4 +29,5 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
 	Route::get('/', 'AdminController@index');
 
 	Route::resource('skill', 'SkillController');
+	Route::resource('tool', 'ToolController');
 });

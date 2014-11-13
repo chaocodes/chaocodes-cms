@@ -26,7 +26,7 @@
 		{{HTML::link('admin/skill', 'SKILLS')}}
 	</li>
 	<li>
-		{{HTML::link('admin', 'TOOLS')}}
+		{{HTML::link('admin/tool', 'TOOLS')}}
 	</li>
 	<li>
 		{{HTML::link('admin', 'PROJECTS')}}
