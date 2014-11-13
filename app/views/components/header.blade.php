@@ -32,7 +32,7 @@
 		{{HTML::link('admin/project', 'PROJECTS')}}
 	</li>
 	<li>
-		{{HTML::link('admin', 'COURSES')}}
+		{{HTML::link('admin/course', 'COURSES')}}
 	</li>
 	<li>
 		{{Form::open(array('url' => 'logout', 'class' => 'form'))}}
