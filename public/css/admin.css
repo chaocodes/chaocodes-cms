@@ -1,0 +1,54 @@
+#subnav
+{
+	background: #333;
+	border-bottom: #888 solid 2px;
+	padding-top: 2px;
+	color: #fff;
+	height: 20px;
+}
+
+#subnav a
+{
+	color: #fff;
+}
+
+#subnav li
+{
+	font-size: 12px;
+}
+
+#subnav .form
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#subnav .button
+{
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+}
+
+#subnav .button:hover
+{
+	text-decoration: underline;
+}
+
+#admin table, th, td
+{
+	text-align: left;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+#admin tr:nth-child(even)
+{
+	background: #eee;
+}

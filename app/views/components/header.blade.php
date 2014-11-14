@@ -2,7 +2,7 @@
 	<h1>{{HTML::link('/', 'CHAO//CODES')}}</h1>
 	<h2>CHAO LAI</h2>
 </div>
-<div id="navbar">
+<div id="navbar" class="nav">
 	<ul>
 		<li>
 			{{HTML::link('/', 'HOME')}}
@@ -18,7 +18,7 @@
 		</li>
 </div>
 @if (Auth::check())
-<div id="subnav">
+<div id="subnav" class="nav">
 	<li>
 		{{HTML::link('admin', 'ADMIN')}}
 	</li>

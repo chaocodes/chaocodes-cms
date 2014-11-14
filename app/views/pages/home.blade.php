@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('content')
-<div id="about">
+<div id="about" class="content">
 	<div id="abouttext">
 		<h3>About Me</h3>
 		<p>Welcome to ChaoCodes.com! My name is Chao Lai and this is my portfolio. I'm currently a Computer Science major at the University of Connecticut at Storrs, CT. 

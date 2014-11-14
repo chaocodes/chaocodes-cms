@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('content')
-<div id="about">
+<div id="admin" class="content">
 <table style="width:100%">
 	<thead>
 		<tr>

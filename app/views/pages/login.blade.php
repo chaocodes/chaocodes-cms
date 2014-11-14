@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('content')
-<div id="about">
+<div class="content">
 	<br>
 	{{Form::open(array('url' => 'login'))}}
 		<p>

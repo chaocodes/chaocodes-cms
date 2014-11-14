@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('content')
-<div id="about">
+<div class="content">
 	@foreach ($projects as $project)
 	<div id="abouttext">
 		<h3>{{$project->name}}</h3>
