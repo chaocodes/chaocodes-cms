@@ -18,8 +18,8 @@
 	<td>{{$project->updated_at->format('F d, Y h:ia') }}</td>
 	<td>
 		<a href="project/{{$project->id}}/edit">Edit</a>
-		{{Form::open(['url' => 'admin/project/' . $project->id, 'method' => 'DELETE'])}}
-		{{Form::submit('Delete')}}
+		{{Form::open(['url' => 'admin/project/' . $project->id, 'method' => 'DELETE', 'class' => 'button-wrapper'])}}
+		{{Form::submit('Delete', ['class' => 'button-link'])}}
 		{{Form::close()}}
 	</td>
 </tr>
@@ -27,5 +27,5 @@
 @stop
 
 @section('addBtn')
-<a href="project/create">Add Project</a>
+<a href="project/create" class="button-add">Add Project</a>
 @stop

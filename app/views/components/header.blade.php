@@ -35,8 +35,8 @@
 		{{HTML::link('admin/course', 'COURSES')}}
 	</li>
 	<li>
-		{{Form::open(array('url' => 'logout', 'class' => 'form'))}}
-		{{Form::submit('LOGOUT', array('class' => 'button'))}}
+		{{Form::open(['url' => 'logout', 'class' => 'button-wrapper'])}}
+		{{Form::submit('LOGOUT', ['class' => 'button-link'])}}
 		{{Form::close()}}
 	</li>
 </div>

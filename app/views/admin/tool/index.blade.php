@@ -16,8 +16,8 @@
 	<td>{{$tool->updated_at->format('F d, Y h:ia') }}</td>
 	<td>
 		<a href="tool/{{$tool->id}}/edit">Edit</a>
-		{{Form::open(['url' => 'admin/tool/' . $tool->id, 'method' => 'DELETE'])}}
-		{{Form::submit('Delete')}}
+		{{Form::open(['url' => 'admin/tool/' . $tool->id, 'method' => 'DELETE', 'class' => 'button-wrapper'])}}
+		{{Form::submit('Delete', ['class' => 'button-link'])}}
 		{{Form::close()}}
 	</td>
 </tr>
@@ -25,5 +25,5 @@
 @stop
 
 @section('addBtn')
-<a href="tool/create">Add Tool</a>
+<a href="tool/create" class="button-add">Add Tool</a>
 @stop

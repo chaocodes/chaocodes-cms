@@ -14,8 +14,8 @@
 	<td>{{$skill->updated_at->format('F d, Y h:ia') }}</td>
 	<td>
 		<a href="skill/{{$skill->id}}/edit">Edit</a>
-		{{Form::open(['url' => 'admin/skill/' . $skill->id, 'method' => 'DELETE'])}}
-		{{Form::submit('Delete')}}
+		{{Form::open(['url' => 'admin/skill/' . $skill->id, 'method' => 'DELETE', 'class' => 'button-wrapper'])}}
+		{{Form::submit('Delete', ['class' => 'button-link'])}}
 		{{Form::close()}}
 	</td>
 </tr>
@@ -23,5 +23,5 @@
 @stop
 
 @section('addBtn')
-<a href="skill/create">Add Skill</a>
+<a href="skill/create" class="button-add">Add Skill</a>
 @stop

@@ -13,6 +13,7 @@
 		@yield('tbody')
 	</tbody>
 </table>
+<br>
 @yield('addBtn')
 </div>
 @stop

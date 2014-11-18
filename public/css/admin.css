@@ -17,29 +17,6 @@
 	font-size: 12px;
 }
 
-#subnav .form
-{
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-
-#subnav .button
-{
-	background: none;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	cursor: pointer;
-	font: inherit;
-	color: inherit;
-}
-
-#subnav .button:hover
-{
-	text-decoration: underline;
-}
-
 #admin table, th, td
 {
 	text-align: left;
@@ -51,4 +28,54 @@
 #admin tr:nth-child(even)
 {
 	background: #eee;
+}
+
+.textbox
+{
+	margin: 10px 0px;
+	padding: 6px;
+	width: 100%;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.textbox:hover
+{
+	border: 2px inset #aaa;
+}
+
+.textbox:focus
+{
+	border: 2px inset #000;
+}
+
+.button-wrapper
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.button-link
+{
+	background: none;
+	border: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+}
+
+.button-link:hover
+{
+	text-decoration: underline;
+}
+
+.button-add
+{
+	border: 1px solid #ccc;
+	padding: 5px;
 }
