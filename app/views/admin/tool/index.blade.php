@@ -14,7 +14,7 @@
 	<td><img src="../{{$tool->image}}" alt="{{$tool->image}}"/></td>
 	<td><a href="{{$tool->url}}">{{$tool->url}}</a></td>
 	<td>{{$tool->updated_at->format('F d, Y h:ia') }}</td>
-	<td>
+	<td width="12%">
 		<a href="tool/{{$tool->id}}/edit">Edit</a>
 		{{Form::open(['url' => 'admin/tool/' . $tool->id, 'method' => 'DELETE', 'class' => 'button-wrapper'])}}
 		{{Form::submit('Delete', ['class' => 'button-link'])}}

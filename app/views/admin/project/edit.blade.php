@@ -4,7 +4,7 @@
 <h3>Edit Project</h3>
 {{Form::model($project, ['url' => 'admin/project/' . $project->id, 'method' => 'PUT'])}}
 {{Form::label('name', 'Name')}}
-{{Form::text('name', null, ['placeholder' => 'Tool', 'class' => 'textbox'])}}
+{{Form::text('name', null, ['placeholder' => 'Project', 'class' => 'textbox'])}}
 <br>
 {{Form::label('url', 'URL')}}
 {{Form::text('url', null, ['placeholder' => 'http://', 'class' => 'textbox'])}}

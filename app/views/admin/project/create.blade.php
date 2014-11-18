@@ -4,7 +4,7 @@
 <h3>Add Project</h3>
 {{Form::open(['url' => 'admin/project'])}}
 {{Form::label('name', 'Name')}}
-{{Form::text('name', null, ['placeholder' => 'Tool', 'class' => 'textbox'])}}
+{{Form::text('name', null, ['placeholder' => 'Project', 'class' => 'textbox'])}}
 <br>
 {{Form::label('url', 'URL')}}
 {{Form::text('url', null, ['placeholder' => 'http://', 'class' => 'textbox'])}}
