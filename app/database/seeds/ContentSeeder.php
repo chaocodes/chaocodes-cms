@@ -98,5 +98,12 @@ class ContentSeeder extends Seeder
 			$tool->url = $url;
 			$tool->save();
 		}
+
+		// User
+		DB::table('users')->delete();
+		$user = new User;
+		$user->username = getenv('ADMIN_USER');
+		$user->password = Hash::make(getenv('ADMIN_PASS'));
+		$user->save();
 	}
 }
