@@ -1,3 +1,19 @@
+#login
+{
+	position: absolute;
+	top: 0;
+	padding: 2px;
+}
+
+#login a
+{
+	background: #aaa;
+	border-bottom: #555 2px solid;
+	padding: 2px;
+	font-size: 14px;
+	color: #fff;
+}
+
 #subnav
 {
 	background: #333;

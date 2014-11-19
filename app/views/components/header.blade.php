@@ -1,3 +1,6 @@
+<div id="login">
+	{{HTML::link('admin', 'Admin')}}
+</div>
 <div id="header">
 	<h1>{{HTML::link('/', 'CHAO//CODES')}}</h1>
 	<h2>CHAO LAI</h2>
