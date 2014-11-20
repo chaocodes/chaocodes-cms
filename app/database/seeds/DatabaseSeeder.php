@@ -8,6 +8,8 @@ class DatabaseSeeder extends Seeder
 	 * @return void
 	 */
 	public function run()
-	{	
+	{
+		$this->call('ContentSeeder');
+		$this->command->info('Successfully Seeded!');
 	}
 }

@@ -10,3 +10,26 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+
+Route::get('/', 'PageController@home');
+
+Route::get('projects', 'PageController@projects');
+
+Route::get('resume', 'PageController@resume');
+
+Route::get('courses', 'PageController@courses');
+
+Route::get('login', 'PageController@login');
+Route::post('login', array('before' => 'csrf', 'uses' => 'PageController@processLogin'));
+
+Route::post('logout', 'PageController@logout');
+
+Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
+{
+	Route::get('/', 'AdminController@index');
+
+	Route::resource('skill', 'SkillController');
+	Route::resource('tool', 'ToolController');
+	Route::resource('project', 'ProjectController');
+	Route::resource('course', 'CourseController');
+});
