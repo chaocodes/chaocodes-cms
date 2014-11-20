@@ -1,7 +1,7 @@
 @extends('pages.master')
 
 @section('content')
-<div id="about">
+<div class="content">
 	<h3>Computer Science</h3>
 	<br>
 	@foreach ($courseCS as $course)

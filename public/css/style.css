@@ -57,32 +57,44 @@ a:hover
 	text-align: center;
 }
 
+.nav
+{
+	width: 880px;
+	text-align: center;
+}
+
+.nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+.nav li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline;
+}
+
 #navbar
 {
 	background-image: url("../images/navbar.jpg");
 	background-repeat: repeat-x;
 	height: 59px;
-	width: 880px;
-	text-align: center;
 }
 
 #navbar ul
 {
-	margin: 0;
-	padding: 0;
 	padding-top: 17px;
-	list-style-type:none;
-} 
+}
 
 #navbar li
 {
-	padding-left: 10px;
-	padding-right: 10px;
-	display: inline;
 	font-size: 20px;
 }
 
-#about
+.content
 {
 	margin-top: 20px;
 	width: 880px;
