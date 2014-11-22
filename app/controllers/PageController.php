@@ -4,7 +4,7 @@ class PageController extends Controller
 {
 	public function home()
 	{
-		$skills = Skill::all();
+		$skills = Skill::orderBy('experience', 'desc')->get();
 		$tools = Tool::all();
 
 		return View::make('pages.home')->with
