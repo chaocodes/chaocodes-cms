@@ -49,6 +49,19 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+
+	if (Config::get('app.debug'))
+	{
+		return;
+	}
+
+	switch($code)
+	{
+		case 404:
+			return Response::view('errors.404', array(), 404);
+		default:
+			return Response::view('error.default', array(), $code);
+	}
 });
 
 /*
