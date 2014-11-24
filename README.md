@@ -16,10 +16,13 @@ return
 	'DB_PASS' => '',
 	'ADMIN_USER' => '',
 	'ADMIN_PASS' => '',
+	'ENC_KEY' => '32-char random string',
 ];
 ```
 
-replacing empty strings with your information
+replacing empty strings with your information. Use .env.php filename if using on production machine.
 
 Run `php artisan migrate`
 Run `php artisan db:seed`
+
+After seeding, you may remove choose admin_user and admin_pass from env file.
