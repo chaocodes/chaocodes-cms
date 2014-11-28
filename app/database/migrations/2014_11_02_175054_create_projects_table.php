@@ -10,9 +10,9 @@ class CreateProjectsTable extends Migration
 		Schema::create('projects', function($table)
 		{
 			$table->increments('id');
-			$table->string('name', 30);
+			$table->string('name', 40);
 			$table->string('url', 60);
-			$table->string('image', 30);
+			$table->string('image', 40);
 			$table->text('description');
 			$table->timestamps();
 		});
