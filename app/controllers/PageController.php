@@ -16,7 +16,7 @@ class PageController extends Controller
 
 	public function projects()
 	{
-		$projects = Project::all();
+		$projects = Project::orderBy('id', 'desc')->get();
 
 		return View::make('pages.projects')->with
 		([
